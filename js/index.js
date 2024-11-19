@@ -18,7 +18,7 @@ async function fetchData(){
                 str += `<div class="show">
                     <img src=${product.thumbnail} class="product" alt="">
                 </div>    
-                <a href="product.html">
+                <a href="product.html?id=${product.id}">
                 <div class="card">
                     <div class="section">
                         <img src=${product.thumbnail} class="product" id="product" alt="">
@@ -41,15 +41,3 @@ async function fetchData(){
     }
 }
 fetchData()
-
-/// <div class="img" id="img">
-{/* <img src=${product.thumbnail} alt="jj">
-</div>
-    <div class="info">
-        <h3 id="name">${product.title}</h3>
-        <label for="" id="name">${product.price}</label><br><br><br><br>
-       <label for="" id="name">${product.rating}</label><br>
-       <label for="" id="name">${product.discountPercentage}</label><br>
-
-
-    </div> */}

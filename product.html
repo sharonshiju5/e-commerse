@@ -7,6 +7,7 @@
     <style>
         body{
             margin: 0;
+            background-color: #f1f3f6;
         }
         .main{
             margin: 0;
@@ -22,13 +23,12 @@
             margin: auto;
             margin-top: 10px;
             width: 90%;
-            background-color: #f1f3f6;
             display: flex;
+            background-color: white;
         }
         .imgs{
             margin-left: 20px;
             width: 80px;
-            background-color: aqua;
             height: 450px;
             display: flex;
             flex-direction: column;
@@ -47,10 +47,11 @@
             flex-wrap: wrap;
         }
         .product img{
+            background-color: #e8ebefae;
             margin: auto;
             width: 95%;
             padding: 10px;
-            border: 1px solid rgba(0, 0, 0, 0.467);
+            border: 1px solid rgba(0, 0, 0, 0.156);
         }
         .cart{
             margin-top: 10px;
@@ -97,7 +98,6 @@
             margin-left: 20px;
             width: 60%;
             height: 700px;
-            background-color: aqua;
         }
         h3{
             margin: 0;
@@ -110,14 +110,12 @@
         .descreption{
             width: 100%;
             height: 50px;
-            background-color: #fb641b;
         }
         .path{
             font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             color: gray;
         }
         .name{
-            background-color: cadetblue;
         }
         #name{
             margin:10px 0px 5px 0px;
@@ -125,11 +123,16 @@
             font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             color: green;
         }
+        .descreption {
+            color: rgb(19, 18, 18);
+            font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
         h2{
             font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             font-weight: 500;
             color: rgb(40, 39, 39);
             margin: 0;
+            font-size: 30px;
             
         }
         .price{
@@ -152,7 +155,7 @@
             height: 12px;
             font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             display: flex;
-            width: 25px;
+            width: 35px;
             /* padding-top: 2px; */
             padding-bottom: 13px;
             padding-right: 18px;
@@ -183,15 +186,12 @@
         .colour{
             margin-left: auto;
             width: 85.99%;
-            background-color: greenyellow;
             height: 170px;
             gap: 20px;
             display: flex;
             flex-wrap: wrap;
         }
         .thumb{
-
-            background-color: #fb391b;
             height: 170px;
             width: 100%;
             display: flex;
@@ -205,65 +205,17 @@
         .thumbimg{
             height: 40%;
             margin: 0;
+            filter: invert(80%);
         }
     </style>
 </head>
 <body>
     <div class="main">
         <div class="nav"></div>
-        <div class="container">
-            <div class="imgs">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <img class="img" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">   
-            </div>
-            <div class="product">
-                <img class="img" src="https://rukminim2.flixcart.com/image/128/128/xif0q/smartwatch/8/u/s/-original-imahf5ngfckrg5ug.jpeg?q=70&crop=falsehttps://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                <div class="cart">
-                    <div class="add">
-                        <button class="btn1"><svg class="NwyjNT" width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>    
-                            ADD TO CART</button>
-                    </div>
-                    <div class="buy">
-                        <BUtton class="btn2">BUY NOW</BUtton>
-                    </div>
-                </div>
-            </div>
-            <div class="info">
-                <div class="path">Home > Clothing and > Winter Wear > Jackets > Men's Jackets > MOTREX Me... > MOTREX Full...</div>
-                <div class="name">
-                    <h3>motrex</h3>
-                    <div class="descreption">
-                    </div>
-                    <p id="name">special price</p>
-                    <div class="price">
-                        <h2>$656</h2>
-                        <p class="price2" color="grey">$655666</p>
-                        <p id="name2">76% off</p>
-                    </div>
-                </div>
-                <div class="ratings">
-                    <p class="rate">4.6  <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="  class="star"></p>
-                    <p>ratinghsdkmvsdmvlbh</p>
-                    <img class="fassured" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="">
-                </div>
-                <div class="thumb">
-                    <h6>colours</h6>
-                    <div class="colour">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                        <img class="thumbimg" src="https://www.shutterstock.com/image-photo/calm-weather-on-sea-ocean-260nw-2212935531.jpg" alt="">
-                    </div>
-                </div>
-            </div>
+        <div class="container" id="container">
+            
         </div>
     </div>
+    <script src="./js/product.js"></script>
 </body>
 </html>
