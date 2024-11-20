@@ -6,15 +6,6 @@ async function fetchData(){
             products = [...data.products]
             str=``
             products.map((product) => {
-                function per(a,b){
-                
-                    let amount=(a/100)*b;
-                    let sell=b-amount
-                    console.log(sell,a,b);
-                    return sell
-
-                }
-                per(product.discountPercentage,product.price)
                 str += `<div class="show">
                     <img src=${product.thumbnail} class="product" alt="">
                 </div>    

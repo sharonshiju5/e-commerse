@@ -31,7 +31,7 @@ async function getProduct(){
                 </div>
             </div>
             <div class="info">
-                <div class="path">Home > Clothing and > Winter Wear > Jackets > Men's Jackets > MOTREX Me... > MOTREX Full...</div>
+                <div class="path">Home >${data.tags} > ${data.brand}> ${data.category}>${data.title}>${data.sku}</div>
                 <div class="name">
                     <h3>${data.title}</h3>
                     <div class="descreption">
