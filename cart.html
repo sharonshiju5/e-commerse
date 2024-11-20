@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            /* background-color: rgba(239, 237, 237, 0.173); */
+            /* display: flex; */
+            /* justify-content: center; */
+        }
+        .section{
+            /* padding-top: -20px; */
+            margin: auto;
+            margin-top: 0px;
+            display: flex;
+            height: 630px;
+            width: 80%;
+            /* background-color: teal; */
+        }
+        .nav{
+            height: 70px;
+            width: 100%;
+            background-color: cadetblue;
+            position: fixed;
+            /* margin: 0; */
+        }
+        .main{
+            margin: 99px;
+            width: 65%;
+            height: 580px;
+            /* background-color: royalblue; */
+        }
+        .add{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(199, 199, 197, 0.56);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 5px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        .add p{
+            margin-left: 10px;
+        }
+        .btn1{
+            margin-right: 10px;
+            height: 35px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.221);
+            color: rgb(71, 71, 216);
+            font-weight: 600;
+        }
+        .container{
+            margin-top: 10px;
+            width: 100%;
+            /* height: 550px; */
+            /* background-color: crimson; */
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        }
+        .card{
+            width: 100%;
+            height: 200px;
+            /* background-color: rgba(16, 36, 86, 0.977); */
+            display: flex;
+            border: 1px solid rgba(146, 142, 142, 0.586);
+        }
+        .imgdiv{
+            height: 100%;
+            width: 18%;
+            background-color: rgb(245, 248, 247);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .img{
+            height: 55%;
+            margin: 20px;
+        }
+        .quantity{
+            height: 50px;
+            width: 100%;
+            /* background-color: rgb(59, 42, 242); */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .quantity button{
+            border-radius: 100%;
+            font-size: 16px;
+            background-color: rgba(240, 248, 255, 0);
+            border: 1px solid rgba(0, 0, 0, 0.549);
+        }
+        .quantity h6{
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 16px;
+            border: 1px solid rgba(0, 0, 0, 0.534);
+        }
+        .info{
+            height: 100%;
+            width: 82%;
+            /* background-color: cadetblue; */
+        }
+        h4,h5{
+            margin: 10px;
+        }
+        .seller{
+            height: 25px;
+            margin: 10px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* background-color: chocolate; */
+        }
+        .assure{
+            height: 15px;
+        }
+        .prices{
+            display: flex;
+        }
+        .remove{
+            /* background-color: chartreuse; */
+            display: flex;
+            height:30px;
+        }
+        .remove button{
+            margin-left: 50px;
+            background-color: transparent;
+            border: transparent;
+        }
+        .order{
+            height: 70px;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+            background-color: rgb(228, 227, 224);
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        #order{
+            width: 200px;
+            height: 40px;
+            background-color: #ff7300;
+            border: 1px solid rgba(0, 0, 0, 0.179);
+            border-radius: 5px;
+        }
+        #order:hover{
+            background-color: #ff4000f6;
+
+        }
+        .bill{
+            width: 34%;
+            margin: 10px;
+            margin-top: 0;
+            height: 580px;
+            border-radius: 10px;
+            background-color:rgb(251, 244, 232);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="section">
+        <div class="main">
+            <div class="add">
+                <p>From saved addres</p>
+                <button class="btn1">Enter delivery pincode</button>
+            </div>
+            <div class="container" id="containe">
+                
+            </div>
+            <div class="order">
+                <button id="order">ORDER</button>
+            </div>
+        </div>
+        <div class="bill">
+
+        </div>
+    </div>
+    <script src="./js/cart.js"></script>
+</body>
+</html>
