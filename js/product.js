@@ -10,7 +10,7 @@ async function getProduct(){
     
     document.getElementById("container").innerHTML=`
           
-<div class="imgs">
+            <div class="imgs">
                 <img class="img" src=${data.thumbnail} alt="">
                 <img class="img" src=${data.thumbnail} alt="">
                 <img class="img" src=${data.thumbnail} alt="">

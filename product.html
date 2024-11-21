@@ -32,12 +32,19 @@
             height: 450px;
             display: flex;
             flex-direction: column;
+            /* border: 1px solid black; */
         }
         .imgs img{
             height: 100%;
             /* margin: auto; */
             width: 90%;
+            margin-top: 5px;
             object-fit: contain;
+            border: 0.5px solid rgba(0, 0, 0, 0.142);
+        }
+        .imgs img:hover{
+            border: 1px solid rgb(45, 84, 193);
+
         }
         .product{
             height: 500px;
@@ -206,6 +213,12 @@
             height: 40%;
             margin: 0;
             filter: invert(80%);
+            border: 1px solid black;
+            /* background-color: #eef4fc; */
+        }
+        .thumbimg:hover{
+            border: 1px solid rgb(84, 145, 229);
+            background-color: #bcbfc434;
         }
         
     </style>

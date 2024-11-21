@@ -6,7 +6,7 @@ function displayCart(){
         const prod=JSON.parse(localStorage.getItem(key))
         str+=`<div class="card">
                     <div class="imgdiv">
-                        <img class="img" src=${prod.thumbnail} alt="">
+                    <img class="img" src=${prod.thumbnail} alt="">
                         <div class="quantity">
                             <button>-</button>
                             <h6>1</h6>
@@ -23,7 +23,7 @@ function displayCart(){
                         <div class="prices">
                             <h5>$${prod.price}</h5>
                             <h4>$${(prod.price-((prod.discountPercentage)/prod.price)).toFixed(2)}</h4>
-                            <h5>${prod.discountPercentage}</h5>
+                            <h5>${prod.discountPercentage} off</h5>
                             <h5>offers</h5>
                         </div>
                         <div class="remove">
@@ -33,6 +33,7 @@ function displayCart(){
                 </div>`
     }
     document.getElementById("containe").innerHTML=str
+    document.getElementById("p").innerHTML="price ("+ (localStorage.length)+" item)"
 }
 
 
@@ -43,3 +44,4 @@ function removeProd(id){
     displayCart()
     
 }
+

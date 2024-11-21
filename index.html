@@ -7,7 +7,6 @@
     <style>
         body{
             margin: 0;
-            /* background-color: rgb(230, 154, 107); */
             background-color: rgba(197, 236, 175, 0.889);
             transition-property: height,width;
             transition-duration: 0.5s;
@@ -18,7 +17,6 @@
             height: auto;
             display: flex;
             flex-wrap: wrap;
-            /* gap: 105px 35px; */
             justify-content: center;
             justify-content: space-evenly;
             margin: auto;
@@ -32,8 +30,6 @@
         }
         .card{
             box-shadow: rgba(0, 0, 10, 0.162) 0px 19px 38px, rgba(0, 0, 0, 0.118) 0px 15px 12px;
-            /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
-            /* margin-top: 70px; */
             height: 370px;
             width: 280px;
             transition: ease 50;
@@ -53,19 +49,15 @@
             transition-property: height,width;
             transition-duration: 0.5s;
             background-color: #1a191940;
-            /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
             
         }
         .img{
             width: 100%;
-            height: 80%;
-            
-            /* background-color: antiquewhite; */
+            height: 80%;            
         }
         .info{
             margin: 10px;
             display: flex;
-            /* flex-wrap: ; */
             justify-content: space-between;
             margin: 10px;
         }
@@ -73,16 +65,10 @@
         /* object-fit: fill;/ */
     }
     .section{
-        /* background-color: #414584; */
-        /* background-color: #8a7350; */
         margin:0px ;
         margin-bottom: 50px;
-        /* height:340px; */
-        /* width: 340px; */
         display: flex;
-        /* flex-direction: row; */
         display: grid;
-        /* grid-template-columns:repeat(3,1fr) ; */
         z-index: 100000;
         transition-property: height,width;
         transition-duration: 0.5s;
@@ -95,15 +81,11 @@
         cursor: pointer;
         z-index: 1;
         filter: drop-shadow( 15px 5px 5px rgba(0,0,0,0.3));
-        
     }
     .sale{
         background-color: #ba2b20;
         position: absolute;
-        /* margin-left: 5px;
-        margin-top: 5px; */
         border-radius: 10px 0px;
-        /* padding-left: 10px; */
         height: 20px;
         width: 100px;
         font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -114,11 +96,8 @@
         z-index: 1;
     }
     .star{
-            /* padding-top: 5px; */
             margin-top: 3px;
             height: 40%;
-            /* width: 100%; */
-            /* background-color: aqua; */
             z-index: 1;
         }
     .shnames{
@@ -128,7 +107,6 @@
         display: flex;
         flex-wrap: wrap;
         width: 280px;
-        /* background-color: #d0bfbe; */
     }
     .shnames h2{
         color: #181818;
@@ -193,6 +171,7 @@
         justify-content: space-evenly;
         flex-wrap: wrap;
         position: fixed;
+        align-items: center;
         margin-top: 0;
         top: 0px;
         z-index: 2;
@@ -206,6 +185,7 @@
         color: aliceblue;
         font-size: 20px;
         /* text-align: center; */
+        
         
     }
     a{
@@ -226,7 +206,27 @@
     .card:hover + .show{
         display: none;
         z-index: 100;
-        
+        position: absolute;
+    }
+    .svg{
+        height: 30px;
+        margin: 10px;
+    }
+    .infos p{
+        padding: 0px 10px 0px 10px ;
+        /* background-color: #eb641cf8; */
+        border-radius: 100%;
+    }
+    #cart{
+        background-color: #e828d8;
+        height: 50px;
+        border-radius: 10px;
+        padding-right: 10px;
+        color: #181818;
+        filter: invert(100%);
+    }
+    #cart:hover{
+        background-color: #ba2087;
     }
     </style>
 </head>
@@ -236,6 +236,10 @@
         <div class="infos">HOME</div>
         <div class="infos">CATEGOERY</div>
         <div class="infos">CUSTOMER CARE</div>
+        <div class="infos" id="cart">
+            <svg class="svg" width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+         cart <p class="count" id="count"></p> items
+        </div>
     </div>
     
     <div class="container" id="container">

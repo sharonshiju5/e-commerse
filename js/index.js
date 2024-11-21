@@ -27,6 +27,7 @@ async function fetchData(){
             })
             document.getElementById("container")
             .innerHTML=str
+            document.getElementById("count").innerHTML=localStorage.length
     } catch (error) {
         
     }

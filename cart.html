@@ -10,14 +10,17 @@
             /* background-color: rgba(239, 237, 237, 0.173); */
             /* display: flex; */
             /* justify-content: center; */
+            font-family: FFDINforPuma, Inter, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            color: rgba(0, 0, 0, 0.689);
         }
         .section{
             /* padding-top: -20px; */
             margin: auto;
             margin-top: 0px;
             display: flex;
-            height: 630px;
+            /* height: 630px; */
             width: 80%;
+            /* gap: 20px; */
             /* background-color: teal; */
         }
         .nav{
@@ -67,11 +70,19 @@
             /* background-color: rgba(16, 36, 86, 0.977); */
             display: flex;
             border: 1px solid rgba(146, 142, 142, 0.586);
+            transition: 0.5s;
+        }
+        .card:hover{
+            border-radius: 20px;
+            background-color: rgba(59, 58, 58, 0.337);
+            padding: 50px;
+            width: 83%;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
         }
         .imgdiv{
             height: 100%;
             width: 18%;
-            background-color: rgb(245, 248, 247);
+            /* background-color: rgb(245, 248, 247); */
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -155,12 +166,44 @@
 
         }
         .bill{
-            width: 34%;
+            width: 44%;
             margin: 10px;
-            margin-top: 0;
-            height: 580px;
+            margin-top: 100px;
+            height: 320px;
             border-radius: 10px;
             background-color:rgb(251, 244, 232);
+            /* background-color: #ff7300; */
+        }
+        .div{
+            width: 100%;
+            height: 50px;
+            background-color: #ff7300;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            border: 0.5px solid rgba(0, 0, 0, 0.226);
+            border-radius: 5px;
+        }
+        .h4{
+            text-transform: capitalize;
+
+        }
+        .div2{
+            margin-top: 10px;
+            width: 100%;
+            height: 270px;
+            /* background-color: aqua; */
+        }
+        .div2 p,h2{
+            margin: 10px;
+            margin-left: 20px;
+        }
+        .p{
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            margin-right: 20px;
         }
     </style>
 </head>
@@ -180,7 +223,34 @@
             </div>
         </div>
         <div class="bill">
-
+            <div class="div">
+                <h4 class="h4">
+                    Price details
+                </h4>
+                <div class="div2">
+                    <div class="p" >
+                        <p class="price" id="p"></p>
+                        <p>2102</p>
+                    </div>
+                    <div class="p">
+                        <p>discount</p>
+                        <p>2102</p>
+                    </div>
+                    <div class="p">
+                        <p>delivery charge</p>
+                        <p>2102</p>
+                    </div>
+                    <hr>
+                    <div class="p">
+                        <h2>total amount</h2>
+                        <p>2102</p>
+                    </div>
+                    <hr>
+                    <div class="p">
+                        <p>You will save ₹2,310 on this order</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="./js/cart.js"></script>
