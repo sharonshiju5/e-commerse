@@ -1,9 +1,21 @@
 function displayCart(){
     console.log(localStorage.length);
-    str=``
-    for(i=0;i<localStorage.length;i++){
+    str=``;
+    discount=0;
+    fultotal=0;
+    fuldisc=0;
+    del=0;
+    for(let i=0;i<localStorage.length;i++){
         const key=localStorage.key(i)
         const prod=JSON.parse(localStorage.getItem(key))
+
+        discount=prod.price*(prod.discountPercentage/100);
+        let total=Math.round(prod.price);
+        fultotal+=total;
+        fuldisc+=discount;
+        p=Math.round(prod.price)
+        console.log(fuldisc);
+        
         str+=`<div class="card">
                     <div class="imgdiv">
                     <img class="img" src=${prod.thumbnail} alt="">
@@ -31,13 +43,52 @@ function displayCart(){
                         </div>
                     </div>
                 </div>`
-    }
-    document.getElementById("containe").innerHTML=str
-    document.getElementById("p").innerHTML="price ("+ (localStorage.length)+" item)"
+                if(localStorage.length>=3){
+                    console.log("heee");
+                    del="free";
+                    
+                }
+                else{
+                    del="$100"
+                    console.log(del);
+                    
+                }
+    }      
+    tot=fultotal-fuldisc
+        document.getElementById("containe").innerHTML=str
+        document.getElementById("bill").innerHTML=`
+        <div class="div">
+        <h4 class="h4">
+        Price details
+        </h4>
+        <div class="div2">
+        <div class="p" >
+        <p class="price" id="p">Price ( ${localStorage.length} item )</p>
+        <p>$${fultotal}</p>
+        </div>
+        <div class="p">
+        <p>Discount</p>
+        <p>${fuldisc.toFixed(2)}</p>
+        </div>
+        <div class="p">
+        <p>delivery charge</p>
+        <p>${del}</p>
+        </div>
+        <hr>
+        <div class="p">
+        <h2>TOTAL AMOUNT</h2>
+        <p>$${tot.toFixed(2)}</p>
+        </div>
+        <hr>
+        <div class="p" id="save">
+        <p> YOU SAVED ON THIS ORDER $ ${(fultotal-tot ).toFixed(2)}</p>
+        </div>
+        </div>
+        </div>`
 }
 
-
 displayCart()
+
 function removeProd(id){
     console.log(id);
     localStorage.removeItem(id)

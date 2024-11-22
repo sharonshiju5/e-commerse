@@ -174,10 +174,15 @@
             background-color:rgb(251, 244, 232);
             /* background-color: #ff7300; */
         }
+        .bill:hover{
+            background-color: rgba(0, 0, 0, 0.192);
+            /* filter: invert(0%); */
+        }
         .div{
             width: 100%;
+            background-color:rgb(208, 202, 192);
             height: 50px;
-            background-color: #ff7300;
+            /* background-color: #ff7300; */
             display: flex;
             flex-wrap: wrap;
             justify-content: start;
@@ -205,6 +210,9 @@
             margin: 0;
             margin-right: 20px;
         }
+        #save{
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -222,8 +230,8 @@
                 <button id="order">ORDER</button>
             </div>
         </div>
-        <div class="bill">
-            <div class="div">
+        <div class="bill" id="bill">
+            <!-- <div class="div">
                 <h4 class="h4">
                     Price details
                 </h4>
@@ -250,7 +258,7 @@
                         <p>You will save ₹2,310 on this order</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <script src="./js/cart.js"></script>
