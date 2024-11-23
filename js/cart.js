@@ -27,15 +27,15 @@ function displayCart(){
                     </div>
                     <div class="info">
                         <h4>${prod.title}</h4>
-                        <h5>uyg</h5>
+                        <h5>  </h5>
                         <div class="seller">
                             <h5>${prod.brand}</h5>
                             <img class="assure" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="">
                         </div>
                         <div class="prices">
-                            <h5>$${prod.price}</h5>
+                            <h5 id="price2">$${prod.price}</h5>
                             <h4>$${(prod.price-((prod.discountPercentage)/prod.price)).toFixed(2)}</h4>
-                            <h5>${prod.discountPercentage} off</h5>
+                            <h5>${prod.discountPercentage}% off</h5>
                             <h5>offers</h5>
                         </div>
                         <div class="remove">
@@ -43,17 +43,16 @@ function displayCart(){
                         </div>
                     </div>
                 </div>`
-                if(localStorage.length>=3){
-                    console.log("heee");
-                    del="free";
-                    
-                }
-                else{
-                    del="$100"
-                    console.log(del);
-                    
-                }
     }      
+        if(localStorage.length>=3){
+            console.log("heee");
+            del="Free";
+            
+        }
+        else{
+            del="$100"
+            console.log(del);            
+        }
     tot=fultotal-fuldisc
         document.getElementById("containe").innerHTML=str
         document.getElementById("bill").innerHTML=`
